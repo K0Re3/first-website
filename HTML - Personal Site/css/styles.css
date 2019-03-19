@@ -4,7 +4,7 @@ body {
 
 }
 
-.container {
+.container, h1 {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -19,15 +19,11 @@ body {
 main {
     border-radius: 0pt 0pt 10pt 10pt;
     padding: 20pt 40pt 20pt 40pt;
-    max-width: 520pt;
-    min-height: 40pt;
+    max-width: 670px;
+    min-height: 53px;
     margin: auto;
     line-height: 1.5;
     font-family: "Roboto", sans-serif;
-}
-
-h3 {
-  font-family: "Roboto", sans-serif;
 }
 
 .link {
@@ -39,17 +35,11 @@ h3 {
   width: 30px;
 }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
-  border-left: 2px;
-  border-right: 0px;
-}
 
 hr {
   border-style: none;
   border-top-style: dotted;
-  border-color: grey;
+  border-color: #226597;
   border-width: 8px;
   width: 15%;
 }
@@ -114,27 +104,15 @@ p {
     margin-inline-end: 0px;
     text-align: justify;
 }
-
-@media only screen and (max-device-width: 500px) {
-  .img-rounded{
-      max-width: 100% ;
-  }
+b {
+    font-size: 16px;
 }
 
-@media only screen and (min-device-width: 501px) and (max-device-width: 700px) {
-  .img-rounded{
-      max-width: 175px ;
-  }
-}
 
-@media only screen and (min-device-width: 701px ) and (max-device-width: 1000px) {
-  .img-rounded {
-    max-width: 200px;
-  }
-}
 
-@media only screen and (min-device-width: 1001px) {
-    .img-rounded {
-      max-width: 250px;
-    }
+.page-text-image img {width:100%;  margin-left: auto; margin-right: auto; margin-bottom: 5px; display:block; border-radius: 50%; max-width: 230px; max-height: 230px;}
+
+@media only screen and (min-width: 707px) {
+.page-text-image {width:50%; float:left;}
+.page-text-message {width:50%; float:right;}
 }
