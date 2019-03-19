@@ -1,5 +1,5 @@
 body {
-  background-color: #b7fbff;
+  background-color: #95e1d3;
   margin: 0 auto;
 
 }
@@ -9,6 +9,12 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+}
+
+.img-rounded{
+  width: auto ;
+  height: auto ;
+  border-radius:50%;
 }
 main {
     border-radius: 0pt 0pt 10pt 10pt;
@@ -36,6 +42,8 @@ h3 {
 table {
   margin-left: auto;
   margin-right: auto;
+  border-left: 2px;
+  border-right: 0px;
 }
 
 hr {
@@ -44,12 +52,6 @@ hr {
   border-color: grey;
   border-width: 8px;
   width: 15%;
-}
-
-.img-rounded{
-width:200px;
-height:200px;
-border-radius:50%;
 }
 
 header, footer {
@@ -81,7 +83,7 @@ nav a {
   margin-left: 30px;
   padding: 15px;
   position: relative;
-  color: #87c0cd;
+  color: #95e1d3;
   border-top: #226597 solid;
   border-bottom: #226597 solid;
 }
@@ -111,4 +113,28 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     text-align: justify;
+}
+
+@media only screen and (max-device-width: 500px) {
+  .img-rounded{
+      max-width: 100% ;
+  }
+}
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 700px) {
+  .img-rounded{
+      max-width: 150px ;
+  }
+}
+
+@media only screen and (min-device-width: 701px ) and (max-device-width: 1000px) {
+  .img-rounded {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-device-width: 1001px) {
+    .img-rounded {
+      max-width: 250px;
+    }
 }
