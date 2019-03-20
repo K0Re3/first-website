@@ -1,5 +1,5 @@
 body {
-  background-color: #95e1d3;
+  background-color: #fdfff0;
   margin: 0 auto;
 
 }
@@ -39,13 +39,13 @@ main {
 hr {
   border-style: none;
   border-top-style: dotted;
-  border-color: #226597;
-  border-width: 8px;
+  border-color: #a1dd70;
+  border-width: 6px;
   width: 15%;
 }
 
 header, footer {
-  background-color: #226597;
+  background-color: #a1dd70;
   font-family: 'Robot', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -73,9 +73,9 @@ nav a {
   margin-left: 30px;
   padding: 15px;
   position: relative;
-  color: #95e1d3;
-  border-top: #226597 solid;
-  border-bottom: #226597 solid;
+  color: #fdfff0;
+  border-top: #a1dd70 solid;
+  border-bottom: #a1dd70 solid;
 }
 
 .header:hover {
@@ -108,11 +108,15 @@ b {
     font-size: 16px;
 }
 
-
-
-.page-text-image img {width:100%;  margin-left: auto; margin-right: auto; margin-bottom: 5px; display:block; border-radius: 50%; max-width: 230px; max-height: 230px;}
+.page-text-image img, .page-text-image-right img {width:100%;  margin-left: auto; margin-right: auto; margin-bottom: 5px; display:block; border-radius: 50%; max-width: 230px; max-height: 230px;}
 
 @media only screen and (min-width: 707px) {
 .page-text-image {width:50%; float:left;}
 .page-text-message {width:50%; float:right;}
+.page-text-image-right {width:50%; float:right;}
+.page-text-message-right {width:50%; float:left;}
+}
+@media only screen and (max-width: 588px) {
+  nav a {display: block; padding: 4px; text-align: center; margin: auto;}
+  .header:hover {color: #black;  border-top: #a1dd70 solid; border-bottom: #a1dd70 solid;}
 }
