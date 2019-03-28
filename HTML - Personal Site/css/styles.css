@@ -28,7 +28,7 @@ main {
 
 .link {
   text-decoration: none;
-  color: #113f67;
+  color: #5c8d89;
 }
 
 .logo {
@@ -42,6 +42,9 @@ hr {
   border-color: #a1dd70;
   border-width: 6px;
   width: 15%;
+  clear: both;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 header, footer {
